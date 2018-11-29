@@ -5,7 +5,7 @@ public class Init extends SuperInit{
         System.out.println("init");
     }
 
-    public Init() {
+    Init() {
         System.out.println("create init");
     }
 }
