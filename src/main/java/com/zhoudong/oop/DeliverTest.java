@@ -15,6 +15,7 @@ public class DeliverTest {
     static void change(int i, Deliver d){
         i = 20;
         d = new Deliver();
+        System.out.println("i="+i+"d = "+d);
     }
 }
 class Deliver{

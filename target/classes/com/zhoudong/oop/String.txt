@@ -1,0 +1,133 @@
+Classfile /D:/IDEA/Herman/target/classes/com/zhoudong/oop/StringTest.class
+  Last modified 2018-12-1; size 972 bytes
+  MD5 checksum 1a4f3f9d42ea7d952e6c5a942ff01b3e
+  Compiled from "StringTest.java"
+public class com.zhoudong.oop.StringTest
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #15.#33        // java/lang/Object."<init>":()V
+   #2 = String             #34            // Hello
+   #3 = Class              #35            // java/lang/StringBuilder
+   #4 = Methodref          #3.#33         // java/lang/StringBuilder."<init>":()V
+   #5 = Methodref          #3.#36         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #6 = String             #37            //  World
+   #7 = Methodref          #3.#38         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #8 = Fieldref           #39.#40        // java/lang/System.out:Ljava/io/PrintStream;
+   #9 = Methodref          #41.#42        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = Class              #43            // java/lang/StringBuffer
+  #11 = Methodref          #10.#33        // java/lang/StringBuffer."<init>":()V
+  #12 = Methodref          #10.#44        // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #13 = Methodref          #10.#38        // java/lang/StringBuffer.toString:()Ljava/lang/String;
+  #14 = Class              #45            // com/zhoudong/oop/StringTest
+  #15 = Class              #46            // java/lang/Object
+  #16 = Utf8               <init>
+  #17 = Utf8               ()V
+  #18 = Utf8               Code
+  #19 = Utf8               LineNumberTable
+  #20 = Utf8               LocalVariableTable
+  #21 = Utf8               this
+  #22 = Utf8               Lcom/zhoudong/oop/StringTest;
+  #23 = Utf8               main
+  #24 = Utf8               ([Ljava/lang/String;)V
+  #25 = Utf8               args
+  #26 = Utf8               [Ljava/lang/String;
+  #27 = Utf8               str
+  #28 = Utf8               Ljava/lang/String;
+  #29 = Utf8               sBuf
+  #30 = Utf8               Ljava/lang/StringBuffer;
+  #31 = Utf8               SourceFile
+  #32 = Utf8               StringTest.java
+  #33 = NameAndType        #16:#17        // "<init>":()V
+  #34 = Utf8               Hello
+  #35 = Utf8               java/lang/StringBuilder
+  #36 = NameAndType        #47:#48        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #37 = Utf8                World
+  #38 = NameAndType        #49:#50        // toString:()Ljava/lang/String;
+  #39 = Class              #51            // java/lang/System
+  #40 = NameAndType        #52:#53        // out:Ljava/io/PrintStream;
+  #41 = Class              #54            // java/io/PrintStream
+  #42 = NameAndType        #55:#56        // println:(Ljava/lang/String;)V
+  #43 = Utf8               java/lang/StringBuffer
+  #44 = NameAndType        #47:#57        // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #45 = Utf8               com/zhoudong/oop/StringTest
+  #46 = Utf8               java/lang/Object
+  #47 = Utf8               append
+  #48 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #49 = Utf8               toString
+  #50 = Utf8               ()Ljava/lang/String;
+  #51 = Utf8               java/lang/System
+  #52 = Utf8               out
+  #53 = Utf8               Ljava/io/PrintStream;
+  #54 = Utf8               java/io/PrintStream
+  #55 = Utf8               println
+  #56 = Utf8               (Ljava/lang/String;)V
+  #57 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+{
+  public com.zhoudong.oop.StringTest();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/zhoudong/oop/StringTest;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: ldc           #2                  // String Hello
+         2: astore_1
+         3: new           #3                  // class java/lang/StringBuilder
+         6: dup
+         7: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+        10: aload_1
+        11: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        14: ldc           #6                  // String  World
+        16: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        19: invokevirtual #7                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        22: astore_1
+        23: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: aload_1
+        27: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: new           #10                 // class java/lang/StringBuffer
+        33: dup
+        34: invokespecial #11                 // Method java/lang/StringBuffer."<init>":()V
+        37: astore_2
+        38: aload_2
+        39: ldc           #2                  // String Hello
+        41: invokevirtual #12                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        44: pop
+        45: aload_2
+        46: ldc           #6                  // String  World
+        48: invokevirtual #12                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        51: pop
+        52: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        55: aload_2
+        56: invokevirtual #13                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        59: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        62: return
+      LineNumberTable:
+        line 10: 0
+        line 11: 3
+        line 12: 23
+        line 14: 30
+        line 15: 38
+        line 16: 45
+        line 17: 52
+        line 18: 62
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      63     0  args   [Ljava/lang/String;
+            3      60     1   str   Ljava/lang/String;
+           38      25     2  sBuf   Ljava/lang/StringBuffer;
+}
+SourceFile: "StringTest.java"
