@@ -1,0 +1,23 @@
+chapter1 ----Arithmetic
+好的Hash算法：
+    1.速度快、效率高
+    2.不可逆性
+    3.敏感性
+    4.低碰撞性
+
+Java类中的hash算法
+    1.Object 取内存地址
+    2.Integer 取值
+    3.HashMap 通过链表避免碰撞
+    4.String 同样的字符串hashCode值是一样的，不重复计算
+
+重写equals()必须重写hashCode()
+    1.如果equals()返回值是true，则hashCode()的值必须一致
+    2.如果equals()返回值是false，则hashCode()的值不要求必须不一致
+    3.HashMap哈希表默认调用的是Key的hashCode()方法，为提高哈希表的性能，最好是重写equals()必须重写hashCode()维持1、2的原则
+
+重写hashCode()原则：
+    1.同一个对象调用多次返回值必须一样，最好不进行重复计算
+    2.如果equals()返回值是true，则hashCode()的值必须一致
+    3.对象用作equals()的Fields都应该用来计算hashCode，为避免重复，为每一个Field乘以一个质数
+

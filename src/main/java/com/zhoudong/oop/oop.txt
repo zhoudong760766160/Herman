@@ -71,3 +71,15 @@ Math:
 
 char：
     1.默认使用Unicode编码：中文2个字节，英文1个字节
+
+==和equals()和hashCode():
+    1.==对于基本类型用于比较值是否相等，对于引用类型用于比较所指向的对象内存地址是否完全一样
+    2.Object中equals()调用的是==，所以意义是一样的，若继承类没有重写equals()，则会直接调用Object的equals()
+    3.Object中hashCode()返回的是对象内存地址转化成的int值，所以不同对象的hashCode值不一样
+    4.hashCode()值相等，则equals()不一定为true；equals()为true，则hashCode()值一定相等
+
+IO:
+    1.字节流以字节为单位，一个字节8bit；字符流以字符为单位，为2个字节16bit
+    2.字节流InputStream/OutputStream   字符流Reader/Writer
+    3.字节流在处理输入输出没有用到缓存，字符流会
+    4.IO流在设计上采用了Decorator模式
